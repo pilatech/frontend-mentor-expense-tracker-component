@@ -5,39 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Expenses chart component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Challenge | Frontend Mentor Expenses chart component</title>
 </head>
 <body>
-
-  My balance
-  $921.48
-
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
-  
+ <article class="widget">
+  <header class="widget-header">
+   <p class="widget-balance-text">
+    My balance
+   </p>
+   <p class="widget-balance-amount">
+    $921.48
+   </p>
+   <img src="images/logo.svg" alt="widget logo" class="widget-icon">
+  </header>
+  <main class="widget-main">
+   <section class="widget-main-section">
+    <h2 class="widget-main-heading">Spending - Last 7 days</h2>
+    <!-- insert bars here -->
+   </section>
+   <footer class="widget-footer">
+    <p class="widget-total-text">
+     Total this month
+    </p>
+     <p class="widget-total-amount">$478.33</p>
+     <p class="widget-total-extra">
+     <small>+2.4% </small><br>
+     from last month
+    </p>
+  </footer>
+  </main>
+ </article>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://twitter.com/pchinyengetere">Pilate</a>.
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
