@@ -9,7 +9,7 @@ fetch('./data.json')
   const size = `${day.amount * 3}px`
   return `<p class="day">
   <small class="tooltip">$${day.amount}</small>
-  <span class="day-bar" style="height: ${size};  background: ${highest === day.amount && "hsl(186, 34%, 60%)"};"></span>
+  <span class="day-bar" style="height: ${size};  background: ${highest === day.amount ? "hsl(186, 34%, 60%)" : "hsl(10, 79%, 65%)"};"></span>
   <small class="day-name">${day.day}</small>
   </p>`
  })
