@@ -66,6 +66,9 @@ body {
 .day {
  flex-basis: calc(1 / 7 * 100% - 12px);
  font-size: 1.3rem;
+ position: relative;
+ display: flex;
+ flex-direction: column;
 }
 
 .day-bar {
@@ -75,6 +78,29 @@ body {
  background-color: var(--accent-color);
  margin-bottom: 1.5rem;
  cursor: pointer;
+}
+
+.tooltip {
+ background: var(--highlight-color);
+ color: var(--light-color);
+ padding: 4px;
+ border-radius: 3px;
+ position: absolute;
+ top: -2.5rem;
+ align-self: center;
+ font-weight: 700;
+ display: none;
+ opacity: 0;
+}
+
+.day:hover .tooltip {
+ display: block;
+ opacity: 1;
+ transition: opacity 2s ease-in;
+}
+
+.day-name {
+ align-self: center;
 }
 
 .widget-main-heading {

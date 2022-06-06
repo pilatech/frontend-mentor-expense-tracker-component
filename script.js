@@ -8,13 +8,14 @@ fetch('./data.json')
   
   const size = `${day.amount * 3}px`
   return `<p class="day">
+  <small class="tooltip">$${day.amount}</small>
   <span class="day-bar" style="height: ${size};  background: ${highest === day.amount && "hsl(186, 34%, 60%)"};"></span>
-  sun
+  <small class="day-name">${day.day}</small>
   </p>`
  })
 
  const markUp = newMarkup.join("")
  container.innerHTML += markUp
-
 })
+
 
